@@ -25,7 +25,7 @@ app.get('/avant_voyage', (request, response) => {
 app.post('/', (request, response) => {
   console.log(request.body);
   if (request.body.message === undefined || request.body.message === '') {
-    response.redirect('/')
+    response.redirect('/')/
   }
 })
 app.listen(8080)
