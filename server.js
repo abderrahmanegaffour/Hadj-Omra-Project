@@ -22,6 +22,14 @@ app.get('/avant_voyage', (request, response) => {
   response.render('Home page/avant_voyage')
 })
 
+app.get('/manasik-omra', (request, response) => {
+  response.render('Home page/manasik-omra')
+})
+
+app.get('/signup', (request, response) => {
+  response.render('Home page/signup')
+})
+
 app.post('/', (request, response) => {
   console.log(request.body);
   if (request.body.message === undefined || request.body.message === '') {
